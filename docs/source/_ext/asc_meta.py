@@ -11,6 +11,10 @@ from docutils.parsers.rst import Directive
 KNOWN_FIELDS = ['types', 'industries', 'keywords', 'people']
 
 
+def debug_print(string):
+    pass
+
+
 class MetaInfoNode(nodes.General, nodes.Element):
     meta_information = None
 
@@ -28,7 +32,7 @@ class MetaInfoNode(nodes.General, nodes.Element):
 
 
 def html_visit_semantics_node(self, node):
-    # print(node)
+    # debug_print(node)
 
     meta_attrs = {}
     meta_information = node.get_meta_information()
@@ -66,17 +70,17 @@ class ASCMetaDirective(Directive):
         meta_information = {}
 
         if not isinstance(paragraph_node.children[0], field_list):
-            print("error: Meta information is missing")
+            debug_print("error: Meta information is missing")
             exit(1)
 
         field_list_node = paragraph_node.children.pop(0)
 
-        print(dir(nodes))
+        debug_print(dir(nodes))
 
-        print(field_list_node.children)
+        debug_print(field_list_node.children)
         for field in field_list_node:
-            # print(dir(field))
-            print("field.tagname: {}".format(field.children))
+            # debug_print(dir(field))
+            debug_print("field.tagname: {}".format(field.children))
 
             field_name_node = field.children[0]
             field_body_node = field.children[1]
@@ -86,16 +90,16 @@ class ASCMetaDirective(Directive):
             assert isinstance(field_name_text, str)
             assert field_name_text in KNOWN_FIELDS
 
-            print("field_name_text: {}".format(field_name_text))
+            debug_print("field_name_text: {}".format(field_name_text))
 
             field_body_paragraph_node = field_body_node.children[0]
-            print("field_body_paragraph_node: {}".format(field_body_paragraph_node))
+            debug_print("field_body_paragraph_node: {}".format(field_body_paragraph_node))
 
             field_body_paragraph_text_node = field_body_paragraph_node.children[0]
             field_body_paragraph_text = field_body_paragraph_text_node.astext()
             assert isinstance(field_body_paragraph_text, str)
 
-            print("field_body_paragraph_text: {}".format(field_body_paragraph_text))
+            debug_print("field_body_paragraph_text: {}".format(field_body_paragraph_text))
 
             if not field_name_text in meta_information:
                 meta_information[field_name_text] = []
@@ -103,7 +107,7 @@ class ASCMetaDirective(Directive):
             values = [v.strip() for v in field_body_paragraph_text.split(',')]
             meta_information[field_name_text].extend(values)
 
-        print("final meta_information: {}".format(meta_information))
+        debug_print("final meta_information: {}".format(meta_information))
 
         container = MetaInfoNode(meta_information)
         container.append(paragraph_node)
@@ -119,7 +123,7 @@ def process_asc_meta(app, doctree, fromdocname):
     if not env.all_asc_meta:
         return
 
-    print("process_asc_meta: {}".format(env.all_asc_meta))
+    debug_print("process_asc_meta: {}".format(env.all_asc_meta))
 
     for node in doctree.traverse(MetaSummaryNode):
         content = []
