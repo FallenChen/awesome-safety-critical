@@ -7,7 +7,6 @@ from docutils.parsers.rst import Directive
 # renku-sphinx-theme
 # sphinx-nameko-theme
 # !! sphinx-press-theme
-# ! sphinx-redactor-theme
 
 KNOWN_FIELDS = ['types', 'industries', 'keywords', 'people']
 
