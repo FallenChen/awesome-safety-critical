@@ -19,6 +19,14 @@ software:
 **Disclaimer:** Resources presented here are not necessarily authoritative or
 latest documents on the topic.
 
+About this repository
+---------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   ContentOrganization
+
 Meta information
 ----------------
 
