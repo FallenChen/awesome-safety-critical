@@ -1,0 +1,158 @@
+/*
+ * sidebar.js
+ * ~~~~~~~~~~
+ *
+ * This script makes the awesome-safety-critical keywords shine.
+ *
+ *
+ */
+
+$(function() {
+  var COLORS = {
+    active: 'red',
+    inactive: '#eee'
+  };
+
+  var keywords = $('.keyword');
+  var ascNodes = $('div.asc-node');
+
+  var toggleKeyword = function(keyword) {
+    var activeAttr = keyword.attr('active');
+
+    if (activeAttr && activeAttr == 'true') {
+        keyword.attr('active', false);
+        keyword.css('background-color', COLORS.inactive);
+        return false;
+    } else {
+        keyword.attr('active', true);
+        keyword.css('background-color', COLORS.active);
+        return true;
+    }
+  }
+
+  var _filter = {}
+
+  var filter = function() {
+    function add(category, value) {
+      console.log("filter add: " + category + ': ' + value);
+      if (!_filter[category]) {
+        _filter[category] = []
+      }
+      _filter[category].push(value);
+    }
+
+    function remove(category, value) {
+      var categoryValues = _filter[category];
+      var index = categoryValues.indexOf(value);
+
+      if (index > -1) {
+        categoryValues.splice(index, 1);
+      }
+
+      if (categoryValues.length === 0) {
+        delete _filter[category];
+      }
+    }
+
+    function shouldWhitelist(meta) {
+      console.log("should whileliest");
+      console.log("current meta");
+      console.log(meta);
+      console.log("current filter");
+      console.log(_filter);
+
+      var categories = Object.keys(_filter);
+
+      var categoryMatches = 0;
+
+      for (var categoryIdx = 0; categoryIdx < categories.length; categoryIdx++) {
+        var category = categories[categoryIdx]; // Types
+        var categoryValues = _filter[category]; // ['Accident Report']
+
+        var values = meta[category];
+        if (values === undefined) {
+          return false;
+        }
+
+        var metaHasFilterKeyword = false;
+        for (var i = 0; i < values.length; i++) {
+          var value = values[i];
+          if (categoryValues.indexOf(value) !== -1) {
+            metaHasFilterKeyword = true;
+            break;
+          }
+        }
+        if (metaHasFilterKeyword === false) {
+          return false;
+        }
+
+        categoryMatches = categoryMatches + 1;
+      }
+
+      return categoryMatches === categories.length;
+    }
+
+    function categories() {
+      return Object.keys(_filter);
+    }
+
+    return {
+      add: add,
+      remove: remove,
+      shouldWhitelist: shouldWhitelist,
+      categories: categories,
+    }
+  }();
+
+  var filterNodes = function() {
+    console.log("current filter: ");
+    console.log(_filter);
+    var filterCategories = filter.categories();
+    if (filterCategories.length === 0) {
+      ascNodes.css('display', 'block');
+      return;
+    }
+
+    ascNodes.each(function(i, _ascNode) {
+      var ascNode = $(_ascNode);
+      //console.log(ascNode);
+
+      meta = {};
+      filterCategories.forEach(function(category, i) {
+        //console.log('%d: %s', i, category);
+
+        var ascNodeValue = ascNode.attr(category);
+        if (ascNodeValue === undefined) {
+          return;
+        }
+
+        ascNodeValues = ascNodeValue.split(', ');
+        meta[category] = ascNodeValues;
+      });
+
+      if (filter.shouldWhitelist(meta)) {
+        ascNode.css('display', 'block');
+      } else {
+        ascNode.css('display', 'none');
+      }
+    });
+  }
+
+  keywords.click(function() {
+    var keyword = $(this);
+
+    var category = keyword.attr('category');
+    console.assert(!!category);
+    var value = keyword.text();
+    console.log(!!value);
+
+    var nowActive = toggleKeyword(keyword);
+    if (nowActive) {
+      filter.add(category, value);
+    } else {
+      filter.remove(category, value);
+    }
+
+    filterNodes();
+  });
+});

@@ -45,7 +45,7 @@ def html_visit_semantics_node(self, node):
     for field in meta_information:
         meta_attrs[field] = ', '.join(meta_information[field])
 
-    self.body.append(self.starttag(node, 'div', '', CLASS='internalonly', **meta_attrs))
+    self.body.append(self.starttag(node, 'div', '', CLASS='asc-node', **meta_attrs))
 
 
 def html_depart_semantics_node(self, node):
@@ -157,7 +157,7 @@ def process_asc_meta(app, doctree, fromdocname):
             category_values = sorted(all_asc_meta_content[category])
 
             for value in category_values:
-                value_span_tags.append('<span class="keyword">{}</span>'.format(value))
+                value_span_tags.append('<span category="{}" class="keyword">{}</span>'.format(category, value))
 
             values = ', '.join(value_span_tags)
 
@@ -166,19 +166,6 @@ def process_asc_meta(app, doctree, fromdocname):
             para += raw_node
 
             content.append(para)
-
-        # Create a reference
-        # newnode = nodes.reference('', '')
-        # innernode = nodes.emphasis(_('here'), _('here'))
-        # newnode['refdocname'] = todo_info['docname']
-        # newnode['refuri'] = app.builder.get_relative_uri(
-        #     fromdocname, todo_info['docname'])
-        # newnode['refuri'] += '#' + todo_info['target']['refid']
-        # newnode.append(innernode)
-        # para += newnode
-        # para += nodes.Text('.)', '.)')
-
-        # Insert into the todolist
 
         node.replace_self(content)
 

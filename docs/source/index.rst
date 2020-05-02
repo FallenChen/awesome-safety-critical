@@ -619,7 +619,7 @@ Reports
     :industries: Nuclear
     :keywords: Software
 
-    `Licensing of safety critical software for nuclear reactors (2018) <https://www.bfe.bund.de/SharedDocs/Downloads/BfE/EN/reports/kt/Report-Software.pdf?__blob=publicationFile&v=2>`_](https://www.bfe.bund.de/SharedDocs/Downloads/BfE/EN/reports/kt/Report-Software.pdf?__blob=publicationFile&v=2)
+    `Licensing of safety critical software for nuclear reactors (2018) <https://www.base.bund.de/SharedDocs/Downloads/BASE/EN/reports/kt/Report-Software.pdf?__blob=publicationFile&v=2>`_
 
     Common position of international nuclear regulators and authorised technical support organisations
 
@@ -648,6 +648,7 @@ Accidents
     :types: Accident Report
     :industries: Space
     :keywords: Accidents
+    :people: Nancy Leveson
 
     `Mars Climate Orbiter Mishap Investigation <http://sunnyday.mit.edu/accidents/MCO_report.pdf>`_
 
@@ -662,6 +663,7 @@ Accidents
     :types: Accident Report
     :industries: Medical
     :keywords: Accidents
+    :people: Nancy Leveson
 
     `An Investigation of the Therac-25 Accidents <https://www.cs.nmt.edu/~cse382/reading/therac-25.pdf>`_ (original paper),
     `Medical Devices: The Therac-25 (updated version of the paper) <http://sunnyday.mit.edu/papers/therac.pdf>`_,
@@ -671,22 +673,25 @@ Accidents
     :types: Accident Report
     :industries: Space
     :keywords: Accidents
+    :people: Nancy Leveson
 
     `ESA ARIANE 5 Flight 501 Failure <http://sunnyday.mit.edu/accidents/Ariane5accidentreport.html>`_
 
 .. asc-meta::
     :types: Accident Report
     :industries: Space
-    :keywords: Accidents
+    :keywords: Accidents, ESA
 
-    - `ExoMars 2016 - Schiaparelli Anomaly Inquiry (PDF at the bottom)](http://exploration.esa.int/mars/59176-exomars-2016-schiaparelli-anomaly-inquiry/), [ESA Schiaparelli Lander Crash <http://spacenews.com/esa-mars-lander-crash-caused-by-1-second-inertial-measurement-error/>`_](http://exploration.esa.int/mars/59176-exomars-2016-schiaparelli-anomaly-inquiry/), `ESA Schiaparelli Lander Crash <http://spacenews.com/esa-mars-lander-crash-caused-by-1-second-inertial-measurement-error/>`_
+    `ExoMars 2016 - Schiaparelli Anomaly Inquiry (PDF at the bottom)](http://exploration.esa.int/mars/59176-exomars-2016-schiaparelli-anomaly-inquiry/), [ESA Schiaparelli Lander Crash <http://spacenews.com/esa-mars-lander-crash-caused-by-1-second-inertial-measurement-error/>`_](http://exploration.esa.int/mars/59176-exomars-2016-schiaparelli-anomaly-inquiry/), `ESA Schiaparelli Lander Crash <http://spacenews.com/esa-mars-lander-crash-caused-by-1-second-inertial-measurement-error/>`_
 
 .. asc-meta::
     :types: Accident Report
     :industries: Automotive
     :keywords: Accidents
 
-    `A Case Study of Toyota Unintended Acceleration and Software Safety](https://betterembsw.blogspot.de/2014/09/a-case-study-of-toyota-unintended.html) and [NASA report on the Toyota Unintended Acceleration Issue <https://www.nhtsa.gov/staticfiles/nvs/pdf/NASA-UA_report.pdf>`_ and `NASA report on the Toyota Unintended Acceleration Issue <https://www.nhtsa.gov/staticfiles/nvs/pdf/NASA-UA_report.pdf>`_
+    `A Case Study of Toyota Unintended Acceleration and Software Safety](https://betterembsw.blogspot.de/2014/09/a-case-study-of-toyota-unintended.html)
+    and
+    [NASA report on the Toyota Unintended Acceleration Issue <https://www.nhtsa.gov/staticfiles/nvs/pdf/NASA-UA_report.pdf>`_ and `NASA report on the Toyota Unintended Acceleration Issue <https://www.nhtsa.gov/staticfiles/nvs/pdf/NASA-UA_report.pdf>`_
 
 Books
 -----
@@ -820,7 +825,7 @@ Videos
 .. asc-meta::
     :types: Video
     :industries: All, Space
-    :keywords: Software, JPL, NASA
+    :keywords: Software, JPL, NASA, C
     :people: Gerard Holzmann
 
     `Mars Code - Gerard Holzmann, JPL Laboratory for Reliable Software (2012) <https://www.usenix.org/conference/hotdep12/workshop-program/presentation/holzmann>`_
