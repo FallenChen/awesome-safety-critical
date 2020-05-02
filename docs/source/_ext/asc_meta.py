@@ -15,6 +15,12 @@ def debug_print(string):
     pass
 
 
+class RSTHelper:
+    @staticmethod
+    def bold(string):
+        return "<b>{}</b>".format(string)
+
+
 class MetaInfoNode(nodes.General, nodes.Element):
     meta_information = None
 
@@ -138,15 +144,26 @@ def process_asc_meta(app, doctree, fromdocname):
 
                 all_asc_meta_content[field].update(asc_meta[field])
 
-        for taxonomy in all_asc_meta_content:
+        for category in all_asc_meta_content:
             para = nodes.paragraph()
 
-            para += nodes.Text(taxonomy, 'ASC-TODO')
+            # Category
+            para += nodes.strong(None, category.capitalize())
 
             para += nodes.Text(": ", 'ASC-TODO')
 
-            values = ', '.join(all_asc_meta_content[taxonomy])
-            para += nodes.Text(values, 'ASC-TODO')
+            # Values
+            value_span_tags = []
+            category_values = sorted(all_asc_meta_content[category])
+
+            for value in category_values:
+                value_span_tags.append('<span class="keyword">{}</span>'.format(value))
+
+            values = ', '.join(value_span_tags)
+
+            raw_node = nodes.raw(None, values, format='html')
+
+            para += raw_node
 
             content.append(para)
 
