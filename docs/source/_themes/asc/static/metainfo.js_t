@@ -18,7 +18,7 @@ $(function() {
   };
 
   var keywords = $('.keyword');
-  var sections = $('#awesome-safety-critical').find('.section');
+  var sections = $('#awesome-safety-critical').children('.section');
   var ascNodes = $('div.asc-node');
 
   var ascShow = function(object) {
