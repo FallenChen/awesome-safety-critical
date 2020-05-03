@@ -803,9 +803,11 @@ Videos
     :industries: All, Automotive
     :keywords: Safety, Certification
 
-    `2017 EuroLLVM Developers’ Meeting: M. Beemster "Using LLVM for Safety-Critical Applications"](https://www.youtube.com/watch?v=pmy1Ttieh3I) and [Using LLVM for Safety-Critical Applications. Interview with Marcel Beemster (Euro LLVM 2017) <https://www.youtube.com/watch?v=zSnfGp9HO7g>`_ and `Using LLVM for Safety-Critical Applications. Interview with Marcel Beemster (Euro LLVM 2017) <https://www.youtube.com/watch?v=zSnfGp9HO7g>`_](https://www.youtube.com/watch?v=zSnfGp9HO7g).
+    `2017 EuroLLVM Developers’ Meeting: M. Beemster "Using LLVM for Safety-Critical Applications <https://www.youtube.com/watch?v=pmy1Ttieh3I>`_
+    and
+    `Using LLVM for Safety-Critical Applications. Interview with Marcel Beemster (Euro LLVM 2017) <https://www.youtube.com/watch?v=zSnfGp9HO7g>`_
 
-    Marcel Beemster, Solid Sands B.V. http://solidsands.nl/, http://www.LLVM.org/devmtg/2017-03/
+    Marcel Beemster, Solid Sands B.V. http://solidsands.nl
 
 .. asc-meta::
     :types: Video
