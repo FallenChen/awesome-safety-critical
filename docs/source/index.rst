@@ -611,7 +611,8 @@ Papers
 
 .. asc-meta::
     :types: Paper
-    :industries: All
+    :keywords: Accidents
+    :industries: All, Space
     :people: Nancy Leveson
 
     `The Role of Software in Spacecraft Accidents <http://sunnyday.mit.edu/papers/jsr.pdf>`_
