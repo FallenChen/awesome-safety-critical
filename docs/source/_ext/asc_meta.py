@@ -8,7 +8,7 @@ from docutils.parsers.rst import Directive
 # sphinx-nameko-theme
 # !! sphinx-press-theme
 
-KNOWN_FIELDS = ['types', 'industries', 'keywords', 'people']
+KNOWN_FIELDS = ['types', 'keywords', 'industries', 'companies', 'people']
 
 
 def debug_print(string):

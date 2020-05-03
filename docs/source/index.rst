@@ -64,7 +64,8 @@ Friendly lists
 
 .. asc-meta::
     :types: List
-    :keywords: Software, Verification
+    :keywords: Software, Verification, Formal Verification
+    :companies: All
 
     `practical-fm <https://github.com/ligurio/practical-fm>`_
 
@@ -120,7 +121,7 @@ Resources
 .. asc-meta::
     :types: Resource
     :industries: Space, All
-    :keywords: Formal Methods
+    :keywords: Formal Verification
 
     `NASA Langley Formal Methods Research Program <https://shemesh.larc.nasa.gov/fm/index.html>`_
 
@@ -239,22 +240,25 @@ Software safety standards
 
 .. asc-meta::
     :types: Standard
+    :keywords: Safety, Software
     :industries: Space, All
-    :keywords: Safety, Software, NASA
+    :companies: NASA
 
     `NASA-STD-8719.13B, NASA Software Safety Standard <http://www.system-safety.org/Documents/NASA-STD-8719.13B.pdf>`_
 
 .. asc-meta::
     :types: Standard
     :industries: Space
-    :keywords: Software, ESA
+    :companies: ESA
+    :keywords: Software
 
     `ECSS-E-ST-40C, Software <http://ecss.nl/standard/ecss-e-st-40c-software-general-requirements/>`_
 
 .. asc-meta::
     :types: Standard
     :industries: Space
-    :keywords: Software, ESA
+    :companies: ESA
+    :keywords: Software
 
     `ECSS-Q-ST-80C Rev.1 – Software product assurance <http://ecss.nl/standard/ecss-q-st-80c-rev-1-software-product-assurance-15-february-2017/>`_
 
@@ -264,15 +268,17 @@ Handbooks
 
 .. asc-meta::
     :types: Handbook
+    :keywords: Software
     :industries: Space
-    :keywords: Software, ESA
+    :companies: ESA
 
     `ECSS-E-HB-40A – Software engineering handbook <http://ecss.nl/hbstms/ecss-e-hb-40a-software-engineering-handbook-11-december-2013/>`_
 
 .. asc-meta::
     :types: Handbook
     :industries: Space
-    :keywords: Software, Safety, NASA
+    :companies: NASA
+    :keywords: Software, Safety
 
     `NASA Software Safety Guidebook <http://www.system-safety.org/Documents/NASA-GB-8719.13.pdf>`_
 
@@ -282,14 +288,16 @@ Handbooks
 .. asc-meta::
     :types: Handbook
     :industries: Space
-    :keywords: Systems Engineering, Safety, NASA
+    :companies: NASA
+    :keywords: Systems Engineering, Safety
 
     `NASA Systems Engineering Handbook <https://www.nasa.gov/connect/ebooks/nasa-systems-engineering-handbook>`_
 
 .. asc-meta::
     :types: Handbook
     :industries: Space
-    :keywords: Fault Management, Safety, NASA
+    :companies: NASA
+    :keywords: Fault Management, Safety
 
     `NASA Fault Management Handbook <https://www.nasa.gov/pdf/636372main_NASA-HDBK-1002_Draft.pdf>`_
 
@@ -298,7 +306,8 @@ Handbooks
 .. asc-meta::
     :types: Handbook
     :industries: All
-    :keywords: Safety, Safety Culture, NASA
+    :companies: NASA
+    :keywords: Safety, Safety Culture
 
     `NASA Safety Culture Handbook <https://standards.nasa.gov/standard/nasa/nasa-hdbk-870924>`_
 
@@ -333,6 +342,7 @@ Handbooks
 .. asc-meta::
     :types: Handbook
     :industries: Space
+    :companies: ESA
     :keywords: Software, Technology Readiness Level
 
     `European Space Agency - Technology Readiness Levels Handbook for Space Applications <https://artes.esa.int/sites/default/files/TRL_Handbook.pdf>`_
@@ -364,29 +374,33 @@ Coding guidelines
 
 .. asc-meta::
     :types: Coding guidelines
+    :keywords: Software, C, C++
     :industries: All, Space
-    :keywords: Software, C, C++, NASA, JPL
+    :companies: NASA, JPL
 
     `The Power of Ten – Rules for Developing Safety Critical Code <Backup/P10.pdf>`_
 
 .. asc-meta::
     :types: Coding guidelines
     :industries: All, Space
-    :keywords: Software, C, NASA, JPL
+    :companies: NASA, JPL
+    :keywords: Software, C
 
     `JPL Institutional Coding Standard for the C Programming Language <https://lars-lab.jpl.nasa.gov/JPL_Coding_Standard_C.pdf>`_
 
 .. asc-meta::
     :types: Coding guidelines
     :industries: All, Space
-    :keywords: Software, C, NASA
+    :companies: NASA
+    :keywords: Software, C
 
     `NASA C STYLE GUIDE <Backup/nasa-c-style.pdf>`_
 
 .. asc-meta::
     :types: Coding guidelines
     :industries: All, Space
-    :keywords: Software, C++, NASA
+    :companies: NASA
+    :keywords: Software, C++
 
     `C++ Coding Standards and Style Guide <https://ntrs.nasa.gov/search.jsp?R=20080039927>`_
 
@@ -429,8 +443,9 @@ Certification
 
 .. asc-meta::
     :types: Presentation
+    :keywords: Software
     :industries: All
-    :keywords: Software, AdaCore
+    :companies: AdaCore
 
     `Introduction to Certification by Quentin Ochem, AdaCore <http://idl.univ-brest.fr/etr11/EXPOSES%20ETR%202011/mercredi%20AM/etr11-ochem.pptx>`_
 
@@ -444,7 +459,8 @@ Certification
 .. asc-meta::
     :types: Article
     :industries: All
-    :keywords: Software, ESA, NASA, Technology Readiness Level
+    :companies: ESA, NASA
+    :keywords: Software, Technology Readiness Level
 
     `Technology Readiness Level, ESA <http://sci.esa.int/sci-ft/50124-technology-readiness-level>`_,
     `Technology Readiness Level, NASA <https://www.nasa.gov/directorates/heo/scan/engineering/technology/txt_accordion1.html>`_
@@ -461,7 +477,8 @@ Formal verification
 .. asc-meta::
     :types: Article
     :industries: All
-    :keywords: Software, Formal Verification, INRIA
+    :companies: INRIA
+    :keywords: Software, Formal Verification
 
     `Verified Squared: Does Critical Software Deserve Verified Tools? <http://gallium.inria.fr/~xleroy/publi/popl11-invited-talk.pdf>`_
 
@@ -471,7 +488,8 @@ MC/DC
 .. asc-meta::
     :types: Paper
     :industries: All
-    :keywords: Software, MC/DC, NASA
+    :companies: NASA
+    :keywords: Software, MC/DC
 
     `A practical approach to Modified Condition/Decision Coverage <https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20040086014.pdf>`_
 
@@ -482,7 +500,8 @@ MC/DC
 .. asc-meta::
     :types: Paper
     :industries: All
-    :keywords: Software, MC/DC, NASA
+    :companies: NASA
+    :keywords: Software, MC/DC
 
     `A Practical Tutorial on Modified Condition/Decision Coverage <https://shemesh.larc.nasa.gov/fm/papers/Hayhurst-2001-tm210876-MCDC.pdf>`_
 
@@ -493,7 +512,8 @@ MC/DC
 .. asc-meta::
     :types: Paper
     :industries: All
-    :keywords: Software, MC/DC, NASA
+    :companies: NASA
+    :keywords: Software, MC/DC
 
     `An Empirical Evaluation of the MC/DC Coverage Criterion on the HETE-2 Satellite Software <http://sunnyday.mit.edu/papers/dupuy.pdf>`_
 
@@ -673,6 +693,7 @@ Accidents
 .. asc-meta::
     :types: Accident Report
     :industries: Space
+    :companies: ESA
     :keywords: Accidents
     :people: Nancy Leveson
 
@@ -681,18 +702,22 @@ Accidents
 .. asc-meta::
     :types: Accident Report
     :industries: Space
-    :keywords: Accidents, ESA
+    :companies: ESA
+    :keywords: Accidents
 
-    `ExoMars 2016 - Schiaparelli Anomaly Inquiry (PDF at the bottom)](http://exploration.esa.int/mars/59176-exomars-2016-schiaparelli-anomaly-inquiry/), [ESA Schiaparelli Lander Crash <http://spacenews.com/esa-mars-lander-crash-caused-by-1-second-inertial-measurement-error/>`_](http://exploration.esa.int/mars/59176-exomars-2016-schiaparelli-anomaly-inquiry/), `ESA Schiaparelli Lander Crash <http://spacenews.com/esa-mars-lander-crash-caused-by-1-second-inertial-measurement-error/>`_
+    `ExoMars 2016 - Schiaparelli Anomaly Inquiry (PDF at the bottom) <http://exploration.esa.int/mars/59176-exomars-2016-schiaparelli-anomaly-inquiry>`_,
+    `ESA Schiaparelli Lander Crash <http://spacenews.com/esa-mars-lander-crash-caused-by-1-second-inertial-measurement-error>`_
 
 .. asc-meta::
     :types: Accident Report
-    :industries: Automotive
     :keywords: Accidents
+    :industries: Automotive
+    :companies: NASA
+    :people: Phil Koopman
 
-    `A Case Study of Toyota Unintended Acceleration and Software Safety](https://betterembsw.blogspot.de/2014/09/a-case-study-of-toyota-unintended.html)
+    `A Case Study of Toyota Unintended Acceleration and Software Safety <https://betterembsw.blogspot.de/2014/09/a-case-study-of-toyota-unintended.html>`_
     and
-    [NASA report on the Toyota Unintended Acceleration Issue <https://www.nhtsa.gov/staticfiles/nvs/pdf/NASA-UA_report.pdf>`_ and `NASA report on the Toyota Unintended Acceleration Issue <https://www.nhtsa.gov/staticfiles/nvs/pdf/NASA-UA_report.pdf>`_
+    `NASA report on the Toyota Unintended Acceleration Issue <https://www.nhtsa.gov/staticfiles/nvs/pdf/NASA-UA_report.pdf>`_
 
 Books
 -----
@@ -796,7 +821,9 @@ Videos
 .. asc-meta::
     :types: Video
     :industries: All, Aviation
-    :keywords: Software, Formal Verification, Airbus
+    :companies: Airbus
+
+    :keywords: Software, Formal Verification
 
     Formal Method for Avionics Software Verification
 
@@ -825,8 +852,9 @@ Videos
 
 .. asc-meta::
     :types: Video
+    :keywords: Software, C
     :industries: All, Space
-    :keywords: Software, JPL, NASA, C
+    :companies: NASA, JPL
     :people: Gerard Holzmann
 
     `Mars Code - Gerard Holzmann, JPL Laboratory for Reliable Software (2012) <https://www.usenix.org/conference/hotdep12/workshop-program/presentation/holzmann>`_
