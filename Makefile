@@ -11,3 +11,6 @@ check_dead_links: ## Run awesome_bot to check for dead links in README.md
 toc: ## Generate table of contents for README
 	doctoc --maxlevel 3 README.md
 
+doc: ## Generate new awesome-safety-critical content
+	cd docs && make html
+
