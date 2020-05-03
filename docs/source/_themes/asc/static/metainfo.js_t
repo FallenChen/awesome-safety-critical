@@ -8,6 +8,10 @@
  */
 
 $(function() {
+  var CATEGORIES = [
+    'types', 'keywords', 'industries', 'people'
+  ];
+
   var COLORS = {
     active: 'red',
     inactive: '#eee'
@@ -55,11 +59,11 @@ $(function() {
     }
 
     function shouldWhitelist(meta) {
-      console.log("should whileliest");
-      console.log("current meta");
-      console.log(meta);
-      console.log("current filter");
-      console.log(_filter);
+//      console.log("should whileliest");
+//      console.log("current meta");
+//      console.log(meta);
+//      console.log("current filter");
+//      console.log(_filter);
 
       var categories = Object.keys(_filter);
 
@@ -96,11 +100,20 @@ $(function() {
       return Object.keys(_filter);
     }
 
+    function includesTag(category, value) {
+      var categoryValues = _filter[category];
+      if (!categoryValues) {
+        return false;
+      }
+      return categoryValues.indexOf(value) !== -1;
+    }
+
     return {
       add: add,
       remove: remove,
       shouldWhitelist: shouldWhitelist,
       categories: categories,
+      includesTag: includesTag
     }
   }();
 
@@ -110,15 +123,18 @@ $(function() {
     var filterCategories = filter.categories();
     if (filterCategories.length === 0) {
       ascNodes.css('display', 'block');
+      keywords.css('background-color', COLORS.inactive);
       return;
     }
+
+    totalMeta = {};
 
     ascNodes.each(function(i, _ascNode) {
       var ascNode = $(_ascNode);
       //console.log(ascNode);
 
       meta = {};
-      filterCategories.forEach(function(category, i) {
+      CATEGORIES.forEach(function(category, i) {
         //console.log('%d: %s', i, category);
 
         var ascNodeValue = ascNode.attr(category);
@@ -132,8 +148,52 @@ $(function() {
 
       if (filter.shouldWhitelist(meta)) {
         ascNode.css('display', 'block');
+
+        console.log("given meta");
+        console.log(meta);
+        Object.keys(meta).forEach(function(category) {
+          if (!totalMeta[category]) {
+            totalMeta[category] = new Set();
+          }
+
+          categoryValues = meta[category];
+
+          categoryValues.forEach(function(categoryValue) {
+            totalMeta[category].add(categoryValue);
+          });
+        });
       } else {
         ascNode.css('display', 'none');
+      }
+    });
+
+    console.log("totalMeta");
+    console.log(totalMeta);
+
+    keywords.each(function(i, _keyword) {
+      var keyword = $(_keyword);
+
+      var category = keyword.attr('category');
+      console.assert(!!category);
+      var value = keyword.text();
+      console.assert(!!value);
+
+//      console.log("value");
+//      console.log(value);
+
+      if (filter.includesTag(category, value)) {
+        keyword.css('background-color', COLORS.active);
+      } else {
+        keyword.css('background-color', COLORS.inactive);
+
+        var totalMetaCategoryValues = totalMeta[category];
+
+//        console.log("totalMetaCategoryValues");
+//        console.log(totalMetaCategoryValues);
+
+        if (totalMetaCategoryValues === undefined || !totalMetaCategoryValues.has(value)) {
+          keyword.css('background-color', 'gray');
+        }
       }
     });
   }
