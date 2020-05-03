@@ -42,9 +42,14 @@ $(function() {
     }
   }
 
-  var _filter = {}
-
   var filter = function() {
+    var _filter = {}
+
+    function dump() {
+      console.log("filter dump:");
+      console.log(_filter);
+    }
+
     function add(category, value) {
       console.log("filter add: " + category + ': ' + value);
       if (!_filter[category]) {
@@ -67,12 +72,6 @@ $(function() {
     }
 
     function shouldWhitelist(meta) {
-//      console.log("should whileliest");
-//      console.log("current meta");
-//      console.log(meta);
-//      console.log("current filter");
-//      console.log(_filter);
-
       var categories = Object.keys(_filter);
 
       var categoryMatches = 0;
@@ -117,6 +116,7 @@ $(function() {
     }
 
     return {
+      dump: dump,
       add: add,
       remove: remove,
       shouldWhitelist: shouldWhitelist,
@@ -127,7 +127,7 @@ $(function() {
 
   var filterNodes = function() {
     console.log("current filter: ");
-    console.log(_filter);
+    filter.dump();
     var filterCategories = filter.categories();
     if (filterCategories.length === 0) {
       ascShow(ascNodes);
