@@ -21,17 +21,14 @@ software:
 **Disclaimer:** Resources presented here are not necessarily authoritative or
 latest documents on the topic.
 
-About this repository
----------------------
-
-.. toctree::
-   :maxdepth: 1
-
+.. About this repository
+   toctree::
+   maxdepth: 1
    ContentOrganization
    QA
 
-Meta information
-----------------
+Tags
+----
 
 .. asc-meta-summary::
 
