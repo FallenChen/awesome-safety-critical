@@ -83,6 +83,7 @@ Friendly lists
 .. asc-meta::
     :types: List
     :keywords: Safety
+    :people: Phil Koopman
 
     `Computer-Based System Safety Essential Reading List <https://safeautonomy.blogspot.com/p/safe-autonomy.html>`_
 
@@ -298,7 +299,7 @@ Handbooks
 
     `NASA Fault Management Handbook <https://www.nasa.gov/pdf/636372main_NASA-HDBK-1002_Draft.pdf>`_
 
-      - `The Development of NASA’s Fault Management Handbook (Slides) <https://indico.esa.int/event/62/contributions/2777/attachments/2297/2653/1125_-_the-development-of-nasas-fault-management-handbook_Presentation.pdf>`_
+    `The Development of NASA’s Fault Management Handbook (Slides) <https://indico.esa.int/event/62/contributions/2777/attachments/2297/2653/1125_-_the-development-of-nasas-fault-management-handbook_Presentation.pdf>`_
 
 .. asc-meta::
     :types: Handbook
@@ -640,7 +641,7 @@ Reports
     :industries: Automotive
     :keywords: Safety Standards
 
-    - `Assessment of Safety Standards for Automotive Electronic Control Systems <https://www.nhtsa.gov/sites/nhtsa.dot.gov/files/812285_electronicsreliabilityreport.pdf>`_
+    `Assessment of Safety Standards for Automotive Electronic Control Systems <https://www.nhtsa.gov/sites/nhtsa.dot.gov/files/812285_electronicsreliabilityreport.pdf>`_
 
     Van Eikema Hommes, Q. D. (2016, June). Assessment of safety standards for
     automotive electronic control systems. (Report No. DOT HS 812 285).
