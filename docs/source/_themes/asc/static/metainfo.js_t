@@ -9,7 +9,7 @@
 
 $(function() {
   var CATEGORIES = [
-    'types', 'keywords', 'industries', 'companies', 'people'
+    'types', 'keywords', 'languages', 'industries', 'companies', 'people'
   ];
 
   var COLORS = {

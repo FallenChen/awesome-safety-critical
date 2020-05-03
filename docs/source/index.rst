@@ -48,7 +48,7 @@ Friendly lists
 
 .. asc-meta::
     :types: List
-    :keywords: Software, Quality
+    :keywords: Quality
 
     `awesome-software-quality <https://github.com/ligurio/awesome-software-quality>`_
 
@@ -56,7 +56,7 @@ Friendly lists
 
 .. asc-meta::
     :types: List
-    :keywords: Software, Verification
+    :keywords: Verification
 
     `awesome-provable <https://github.com/awesomo4000/awesome-provable>`_
 
@@ -64,7 +64,7 @@ Friendly lists
 
 .. asc-meta::
     :types: List
-    :keywords: Software, Verification, Formal Verification
+    :keywords: Verification, Formal Verification
     :companies: All
 
     `practical-fm <https://github.com/ligurio/practical-fm>`_
@@ -73,7 +73,7 @@ Friendly lists
 
 .. asc-meta::
     :types: List
-    :keywords: Software, Verification
+    :keywords: Verification
 
     `awesome-static-analysis <https://github.com/mre/awesome-static-analysis>`_
 
@@ -82,7 +82,7 @@ Friendly lists
 
 .. asc-meta::
     :types: List
-    :keywords: Software, Safety
+    :keywords: Safety
 
     `Computer-Based System Safety Essential Reading List <https://safeautonomy.blogspot.com/p/safe-autonomy.html>`_
 
@@ -92,7 +92,7 @@ Resources
 .. asc-meta::
     :types: Resource
     :industries: Space
-    :keywords: Software, Hardware
+    :keywords: Hardware, Standards
 
     `European Cooperation for Space Standardization <http://ecss.nl/>`_
 
@@ -240,7 +240,7 @@ Software safety standards
 
 .. asc-meta::
     :types: Standard
-    :keywords: Safety, Software
+    :keywords: Safety
     :industries: Space, All
     :companies: NASA
 
@@ -250,7 +250,6 @@ Software safety standards
     :types: Standard
     :industries: Space
     :companies: ESA
-    :keywords: Software
 
     `ECSS-E-ST-40C, Software <http://ecss.nl/standard/ecss-e-st-40c-software-general-requirements/>`_
 
@@ -258,7 +257,6 @@ Software safety standards
     :types: Standard
     :industries: Space
     :companies: ESA
-    :keywords: Software
 
     `ECSS-Q-ST-80C Rev.1 – Software product assurance <http://ecss.nl/standard/ecss-q-st-80c-rev-1-software-product-assurance-15-february-2017/>`_
 
@@ -268,7 +266,6 @@ Handbooks
 
 .. asc-meta::
     :types: Handbook
-    :keywords: Software
     :industries: Space
     :companies: ESA
 
@@ -278,7 +275,7 @@ Handbooks
     :types: Handbook
     :industries: Space
     :companies: NASA
-    :keywords: Software, Safety
+    :keywords: Safety
 
     `NASA Software Safety Guidebook <http://www.system-safety.org/Documents/NASA-GB-8719.13.pdf>`_
 
@@ -314,7 +311,7 @@ Handbooks
 .. asc-meta::
     :types: Handbook
     :industries: All
-    :keywords: Safety, Software
+    :keywords: Safety
 
     `Software System Safety Handbook <http://www.system-safety.org/Documents/Software_System_Safety_Handbook.pdf>`_
 
@@ -324,7 +321,7 @@ Handbooks
 .. asc-meta::
     :types: Handbook
     :industries: All
-    :keywords: Safety, Software
+    :keywords: Safety
 
     `Joint Software Systems Safety Engineering Handbook <http://www.system-safety.org/Documents/SOFTWARE_SYSTEM_SAFETY_HDBK_2010.pdf>`_
 
@@ -343,7 +340,7 @@ Handbooks
     :types: Handbook
     :industries: Space
     :companies: ESA
-    :keywords: Software, Technology Readiness Level
+    :keywords: Technology Readiness Level
 
     `European Space Agency - Technology Readiness Levels Handbook for Space Applications <https://artes.esa.int/sites/default/files/TRL_Handbook.pdf>`_
 
@@ -352,8 +349,10 @@ Coding guidelines
 
 .. asc-meta::
     :types: Coding guidelines
+    :keywords: MISRA
+    :languages: C, C++
     :industries: All
-    :keywords: Software, MISRA, C, C++
+
 
     `MISRA guidelines <https://www.misra.org.uk/Publications/tabid/57/Default.aspx>`_
 
@@ -367,14 +366,15 @@ Coding guidelines
 
 .. asc-meta::
     :types: Coding guidelines
+    :keywords: AUTOSAR
+    :languages: C++
     :industries: All, Automotive
-    :keywords: Software, C++, AUTOSAR
 
     `AUTOSAR C++14: Guidelines for the use of the C++14 language in critical and safety-related systems <https://www.autosar.org/fileadmin/user_upload/standards/adaptive/17-03/AUTOSAR_RS_CPP14Guidelines.pdf>`_
 
 .. asc-meta::
     :types: Coding guidelines
-    :keywords: Software, C, C++
+    :languages: C, C++
     :industries: All, Space
     :companies: NASA, JPL
 
@@ -382,25 +382,25 @@ Coding guidelines
 
 .. asc-meta::
     :types: Coding guidelines
+    :languages: C
     :industries: All, Space
     :companies: NASA, JPL
-    :keywords: Software, C
 
     `JPL Institutional Coding Standard for the C Programming Language <https://lars-lab.jpl.nasa.gov/JPL_Coding_Standard_C.pdf>`_
 
 .. asc-meta::
     :types: Coding guidelines
+    :languages: C
     :industries: All, Space
     :companies: NASA
-    :keywords: Software, C
 
     `NASA C STYLE GUIDE <Backup/nasa-c-style.pdf>`_
 
 .. asc-meta::
     :types: Coding guidelines
+    :languages: C++
     :industries: All, Space
     :companies: NASA
-    :keywords: Software, C++
 
     `C++ Coding Standards and Style Guide <https://ntrs.nasa.gov/search.jsp?R=20080039927>`_
 
@@ -408,8 +408,8 @@ Coding guidelines
 
 .. asc-meta::
     :types: Coding guidelines
+    :languages: C
     :industries: All
-    :keywords: Software, C
 
     `SEI CERT C Coding Standard <https://www.securecoding.cert.org/confluence/display/c/SEI+CERT+C+Coding+Standard>`_
 
@@ -418,8 +418,8 @@ Coding guidelines
 
 .. asc-meta::
     :types: Coding guidelines
+    :languages: C++
     :industries: All
-    :keywords: Software, C++
 
     `SEI CERT C++ Coding Standard <https://www.securecoding.cert.org/confluence/display/cplusplus>`_
 
@@ -428,8 +428,8 @@ Coding guidelines
 
 .. asc-meta::
     :types: Coding guidelines
+    :languages: C++
     :industries: All
-    :keywords: Software, C++
 
     `JOINT STRIKE FIGHTER AIR VEHICLE C++ CODING STANDARDS <http://www.stroustrup.com/JSF-AV-rules.pdf>`_
 
@@ -443,7 +443,7 @@ Certification
 
 .. asc-meta::
     :types: Presentation
-    :keywords: Software
+    :keywords: Certification
     :industries: All
     :companies: AdaCore
 
@@ -452,7 +452,7 @@ Certification
 .. asc-meta::
     :types: Article
     :industries: All
-    :keywords: Software
+    :keywords: Certification
 
     `Certification Requirements for Safety-Critical Software <Backup/Certification-Requirements-for-Safety-Critical-Software-RTC-Magazine.pdf>`_
 
@@ -460,7 +460,7 @@ Certification
     :types: Article
     :industries: All
     :companies: ESA, NASA
-    :keywords: Software, Technology Readiness Level
+    :keywords: Certification, Technology Readiness Level
 
     `Technology Readiness Level, ESA <http://sci.esa.int/sci-ft/50124-technology-readiness-level>`_,
     `Technology Readiness Level, NASA <https://www.nasa.gov/directorates/heo/scan/engineering/technology/txt_accordion1.html>`_
@@ -478,7 +478,7 @@ Formal verification
     :types: Article
     :industries: All
     :companies: INRIA
-    :keywords: Software, Formal Verification
+    :keywords: Formal Verification
 
     `Verified Squared: Does Critical Software Deserve Verified Tools? <http://gallium.inria.fr/~xleroy/publi/popl11-invited-talk.pdf>`_
 
@@ -489,7 +489,7 @@ MC/DC
     :types: Paper
     :industries: All
     :companies: NASA
-    :keywords: Software, MC/DC
+    :keywords: MC/DC
 
     `A practical approach to Modified Condition/Decision Coverage <https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20040086014.pdf>`_
 
@@ -501,7 +501,7 @@ MC/DC
     :types: Paper
     :industries: All
     :companies: NASA
-    :keywords: Software, MC/DC
+    :keywords: MC/DC
 
     `A Practical Tutorial on Modified Condition/Decision Coverage <https://shemesh.larc.nasa.gov/fm/papers/Hayhurst-2001-tm210876-MCDC.pdf>`_
 
@@ -513,7 +513,7 @@ MC/DC
     :types: Paper
     :industries: All
     :companies: NASA
-    :keywords: Software, MC/DC
+    :keywords: MC/DC
 
     `An Empirical Evaluation of the MC/DC Coverage Criterion on the HETE-2 Satellite Software <http://sunnyday.mit.edu/papers/dupuy.pdf>`_
 
@@ -529,21 +529,18 @@ Articles
 .. asc-meta::
     :types: Article
     :industries: All
-    :keywords: Software
 
     `About Safety Critical Software <http://web.archive.org/web/20110209112635/http://www.aonix.com/safety_critical_overview.html>`_
 
 .. asc-meta::
     :types: Article
     :industries: All
-    :keywords: Software
 
     `IEEE Spectrum-Why Software Fails <http://spectrum.ieee.org/computing/software/why-software-fails>`_
 
 .. asc-meta::
     :types: Article
     :industries: All
-    :keywords: Software
 
     `IEEE Spectrum-Lessons From a Decade of IT Failures <http://spectrum.ieee.org/static/lessons-from-a-decade-of-it-failures>`_
 
@@ -553,7 +550,6 @@ Papers
 .. asc-meta::
     :types: Paper
     :industries: All
-    :keywords: Software
     :people: Nancy Leveson
 
     `White Paper on Approaches to Safety Engineering <http://sunnyday.mit.edu/caib/concepts.pdf>`_
@@ -568,21 +564,20 @@ Papers
 .. asc-meta::
     :types: Paper
     :industries: All
-    :keywords: Software, Safety Standards, Software Safety Standards
+    :keywords: Safety Standards, Software Safety Standards
 
     `Software Safety Standards: Evolution and Lessons Learned <http://paris.utdallas.edu/reu/document/01-Publications/04-Software-Safety-Standards-TSA.pdf>`_
 
 .. asc-meta::
     :types: Paper
     :industries: All
-    :keywords: Software, Safety Standards, Software Safety Standards
+    :keywords: Safety Standards, Software Safety Standards
 
     `An Overview of Software Safety Standards <https://www.osti.gov/scitech/servlets/purl/184397>`_
 
 .. asc-meta::
     :types: Paper
     :industries: All
-    :keywords: Software
     :people: Joe Armstrong
 
     `Making reliable distributed systems in the presence of software errors <http://erlang.org/download/armstrong_thesis_2003.pdf>`_
@@ -590,21 +585,19 @@ Papers
 .. asc-meta::
     :types: Paper
     :industries: All
-    :keywords: Software
 
     `Why Do Computers Stop and What Can Be Done About It? <http://www.hpl.hp.com/techreports/tandem/TR-85.7.pdf>`_
 
 .. asc-meta::
     :types: Paper
     :industries: All
-    :keywords: Software
+    :keywords: Requirements
 
     `Targeting Safety-Related  Errors  During  Software Requirements Analysis <https://trs.jpl.nasa.gov/bitstream/handle/2014/35179/93-0749.pdf>`_
 
 .. asc-meta::
     :types: Paper
     :industries: All, Medical
-    :keywords: Software
     :people: Richard Cook
 
     `How Complex Systems Fail <http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf>`_
@@ -612,14 +605,13 @@ Papers
 .. asc-meta::
     :types: Paper
     :industries: All
-    :keywords: Software
+    :keywords: Certification
 
     `The Qualification of Software Development Tools From the DO-178B Certification Perspective <http://static1.1.sqspcdn.com/static/f/702523/9272430/1288904989327/200604-Kornecki.pdf?token=uZElb5dHWyIfQeLIZnOpSN5BG%2FE%3D>`_
 
 .. asc-meta::
     :types: Paper
     :industries: All
-    :keywords: Software
     :people: Nancy Leveson
 
     `The Role of Software in Spacecraft Accidents <http://sunnyday.mit.edu/papers/jsr.pdf>`_
@@ -630,7 +622,6 @@ Reports
 .. asc-meta::
     :types: Report
     :industries: Space
-    :keywords: Software
     :people: Nancy Leveson
 
     `An Assessment of Space Shuttle Flight Software Development Processes <https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19930019745.pdf>`_
@@ -638,7 +629,6 @@ Reports
 .. asc-meta::
     :types: Report
     :industries: Nuclear
-    :keywords: Software
 
     `Licensing of safety critical software for nuclear reactors (2018) <https://www.base.bund.de/SharedDocs/Downloads/BASE/EN/reports/kt/Report-Software.pdf?__blob=publicationFile&v=2>`_
 
@@ -732,42 +722,40 @@ Books
 .. asc-meta::
     :types: Book
     :industries: All
-    :keywords: Safety, System Safety, Software
+    :keywords: Safety, System Safety
 
     `Engineering a Safer World. Systems Thinking Applied to Safety <https://mitpress.mit.edu/books/engineering-safer-world>`_
 
 .. asc-meta::
     :types: Book
     :industries: All
-    :keywords: Safety, Software
+    :keywords: Safety
 
     `Computer-Related Risks <http://www.csl.sri.com/users/neumann/neumann-book.html>`_
 
 .. asc-meta::
     :types: Book
     :industries: All
-    :keywords: Software, Ada, SPARK
 
     `Building High Integrity Applications with SPARK <https://www.amazon.com/Building-High-Integrity-Applications-SPARK/dp/1107656842/ref=sr_1_1?s=books&ie=UTF8&qid=1489271661&sr=1-1&keywords=high+integrity+spark>`_
 
 .. asc-meta::
     :types: Book
     :industries: All
-    :keywords: Software, Ada
 
     `Building Parallel, Embedded, and Real-Time Applications with Ada <https://www.amazon.com/Building-Parallel-Embedded-Real-Time-Applications/dp/0521197163/ref=sr_1_1?s=books&ie=UTF8&qid=1489271672&sr=1-1&keywords=embedded+ada>`_
 
 .. asc-meta::
     :types: Book
+    :languages: C
     :industries: All
-    :keywords: Software, C
 
     `Writing Solid Code <http://writingsolidcode.com/>`_
 
 .. asc-meta::
     :types: Book
     :industries: All
-    :keywords: Agile Development, Software, Safety
+    :keywords: Agile Development, Safety
 
     `SafeScrum® – Agile Development of Safety-Critical Software <https://www.springer.com/gp/book/9783319993331>`_
 
@@ -777,7 +765,7 @@ Videos
 .. asc-meta::
     :types: Video, Lecture
     :industries: All
-    :keywords: Embedded, Software, Safety
+    :keywords: Embedded, Safety
     :people: Phil Koopman
 
     `Embedded System Safety Lecture Video Series <https://betterembsw.blogspot.de/2017/12/embedded-system-safety-lecture-video.html>`_
@@ -812,7 +800,7 @@ Videos
 .. asc-meta::
     :types: Video
     :industries: All, Automotive
-    :keywords: Safety, Software, Certification
+    :keywords: Safety, Certification
 
     `2017 EuroLLVM Developers’ Meeting: M. Beemster "Using LLVM for Safety-Critical Applications"](https://www.youtube.com/watch?v=pmy1Ttieh3I) and [Using LLVM for Safety-Critical Applications. Interview with Marcel Beemster (Euro LLVM 2017) <https://www.youtube.com/watch?v=zSnfGp9HO7g>`_ and `Using LLVM for Safety-Critical Applications. Interview with Marcel Beemster (Euro LLVM 2017) <https://www.youtube.com/watch?v=zSnfGp9HO7g>`_](https://www.youtube.com/watch?v=zSnfGp9HO7g).
 
@@ -822,8 +810,7 @@ Videos
     :types: Video
     :industries: All, Aviation
     :companies: Airbus
-
-    :keywords: Software, Formal Verification
+    :keywords: Formal Verification
 
     Formal Method for Avionics Software Verification
 
@@ -846,13 +833,12 @@ Videos
 .. asc-meta::
     :types: Video
     :industries: All
-    :keywords: Software
 
     `Programming Languages for High-Assurance Vehicles <https://www.youtube.com/watch?v=3iFFYKM3CTM&feature=youtu.be>`_
 
 .. asc-meta::
     :types: Video
-    :keywords: Software, C
+    :languages: C
     :industries: All, Space
     :companies: NASA, JPL
     :people: Gerard Holzmann
@@ -865,7 +851,6 @@ Interviews
 .. asc-meta::
     :types: Interview
     :industries: Medical
-    :keywords: Software
 
     `Safety in Medical Device Software: Questions and Answers <http://electronicdesign.com/embedded/safety-medical-device-software-questions-and-answers>`_
 
@@ -875,7 +860,6 @@ Press
 .. asc-meta::
     :types: Press
     :industries: Space
-    :keywords: Software
 
     `They Write the Right Stuff <https://www.fastcompany.com/28121/they-write-right-stuff>`_
 
