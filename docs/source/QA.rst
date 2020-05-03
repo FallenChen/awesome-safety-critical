@@ -11,7 +11,7 @@ What is the difference between mission-critical and safety-critical software?
 
 This article contains interesting section on what is the difference between
 mission-critical and safety-critical software:
-`Military COTS-based systems: Not necessarily right off the shelf <http://pdf.cloud.opensystemsmedia.com/advancedtca-systems.com/SBS.Jan04.pdf>`_
+`Military COTS-based systems: Not necessarily right off the shelf <http://pdf.cloud.opensystemsmedia.com/advancedtca-systems.com/SBS.Jan04.pdf>`_.
 
 What kind of special training do engineers working on mission-critical software receive?
 ----------------------------------------------------------------------------------------
@@ -30,13 +30,10 @@ What are the software safety standards?
 See the `Software Safety Standards <#software-safety-standards>`__ here in this list.
 
 Also see on StackOverflow: `Coding for high reliability/availability/security - what standards do I read? <http://stackoverflow.com/questions/142722/coding-for-high-reliability-availability-security-what-standards-do-i-read>`_
-
-and `Software Safety Standards <http://stackoverflow.com/questions/565965/software-safety-standards?noredirect=1&lq=1>`__
+and `Software Safety Standards <http://stackoverflow.com/questions/565965/software-safety-standards?noredirect=1&lq=1>`__.
 
 Safety-critical software and optimising compilers?
 --------------------------------------------------
-
-Safety-critical software and optimising compilers?
 
 `Safety-critical software and optimising compilers <http://softwareengineering.stackexchange.com/questions/267277/safety-critical-software-and-optimising-compilers>`_
 
