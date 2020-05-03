@@ -8,39 +8,56 @@
  */
 
 $(function() {
+  /// Constants
   var CATEGORIES = [
     'types', 'keywords', 'languages', 'industries', 'companies', 'people'
   ];
 
   var COLORS = {
     active: 'red',
-    inactive: '#eee'
+    inactive: '#eee',
+    noContent: '#aaa'
   };
 
+  var KEYWORD_STATE = Object.freeze({"active":1, "inactive":2, "nocontent":3});
+
+  /// Main DOM nodes
   var keywords = $('.keyword');
   var sections = $('#awesome-safety-critical').children('.section');
   var ascNodes = $('div.asc-node');
 
+  /// Editing styles
+
   var ascShow = function(object) {
       object.addClass('asc-active').removeClass('asc-inactive');
   }
+
   var ascHide = function(object) {
       object.addClass('asc-inactive').removeClass('asc-active');
   }
 
-  var toggleKeyword = function(keyword) {
-    var activeAttr = keyword.attr('active');
-
-    if (activeAttr && activeAttr == 'true') {
-        keyword.attr('active', false);
-        keyword.css('background-color', COLORS.inactive);
-        return false;
+  var keywordSetHighlighted = function(keyword, state) {
+    if (state == KEYWORD_STATE.active) {
+      keyword.attr('active', true);
+      keyword.addClass('keyword-active')
+             .removeClass('keyword-inactive')
+             .removeClass('keyword-nocontent');
+    } else if (state == KEYWORD_STATE.inactive) {
+      keyword.attr('active', false);
+      keyword.addClass('keyword-inactive')
+             .removeClass('keyword-active')
+             .removeClass('keyword-nocontent');
+    } else if (state == KEYWORD_STATE.nocontent) {
+      keyword.attr('active', false);
+      keyword.addClass('keyword-nocontent')
+             .removeClass('keyword-active')
+             .removeClass('keyword-inactive');
     } else {
-        keyword.attr('active', true);
-        keyword.css('background-color', COLORS.active);
-        return true;
+      console.assert(false, "should not reach here");
     }
   }
+
+  /// Logic
 
   var filter = function() {
     var _filter = {}
@@ -77,8 +94,8 @@ $(function() {
       var categoryMatches = 0;
 
       for (var categoryIdx = 0; categoryIdx < categories.length; categoryIdx++) {
-        var category = categories[categoryIdx]; // Types
-        var categoryValues = _filter[category]; // ['Accident Report']
+        var category = categories[categoryIdx];
+        var categoryValues = _filter[category];
 
         var values = meta[category];
         if (values === undefined) {
@@ -133,7 +150,7 @@ $(function() {
       ascShow(ascNodes);
       ascShow(sections);
 
-      keywords.css('background-color', COLORS.inactive);
+      keywordSetHighlighted(keywords, KEYWORD_STATE.inactive);
       return;
     }
 
@@ -192,9 +209,9 @@ $(function() {
 //      console.log(value);
 
       if (filter.includesTag(category, value)) {
-        keyword.css('background-color', COLORS.active);
+        keywordSetHighlighted(keyword, KEYWORD_STATE.active);
       } else {
-        keyword.css('background-color', COLORS.inactive);
+        keywordSetHighlighted(keyword, KEYWORD_STATE.inactive);
 
         var totalMetaCategoryValues = totalMeta[category];
 
@@ -202,7 +219,7 @@ $(function() {
 //        console.log(totalMetaCategoryValues);
 
         if (totalMetaCategoryValues === undefined || !totalMetaCategoryValues.has(value)) {
-          keyword.css('background-color', 'gray');
+          keywordSetHighlighted(keyword, KEYWORD_STATE.nocontent);
         }
       }
     });
@@ -235,8 +252,10 @@ $(function() {
     var value = keyword.text();
     console.log(!!value);
 
-    var nowActive = toggleKeyword(keyword);
-    if (nowActive) {
+    var activeAttr = keyword.attr('active');
+    var isActive = (activeAttr && activeAttr == 'true');
+
+    if (!isActive) {
       filter.add(category, value);
     } else {
       filter.remove(category, value);
