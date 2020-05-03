@@ -21,5 +21,5 @@ toc: ## Generate table of contents for README
 	doctoc --maxlevel 3 README.md
 
 doc: ## Generate new awesome-safety-critical content
-	cd docs && make html
+	cd docs && make clean html
 

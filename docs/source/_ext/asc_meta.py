@@ -159,7 +159,7 @@ def process_asc_meta(app, doctree, fromdocname):
             for value in category_values:
                 value_span_tags.append('<span category="{}" class="keyword">{}</span>'.format(category, value))
 
-            values = ', '.join(value_span_tags)
+            values = ' '.join(value_span_tags)
 
             raw_node = nodes.raw(None, values, format='html')
 
