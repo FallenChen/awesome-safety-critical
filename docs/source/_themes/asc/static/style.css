@@ -7,3 +7,11 @@
   line-height: 2.4;
   user-select: none;
 }
+
+.asc-active {
+  display: block;
+}
+
+.asc-inactive {
+  display: none;
+}

@@ -18,7 +18,15 @@ $(function() {
   };
 
   var keywords = $('.keyword');
+  var sections = $('#awesome-safety-critical').find('.section');
   var ascNodes = $('div.asc-node');
+
+  var ascShow = function(object) {
+      object.addClass('asc-active').removeClass('asc-inactive');
+  }
+  var ascHide = function(object) {
+      object.addClass('asc-inactive').removeClass('asc-active');
+  }
 
   var toggleKeyword = function(keyword) {
     var activeAttr = keyword.attr('active');
@@ -122,7 +130,9 @@ $(function() {
     console.log(_filter);
     var filterCategories = filter.categories();
     if (filterCategories.length === 0) {
-      ascNodes.css('display', 'block');
+      ascShow(ascNodes);
+      ascShow(sections);
+
       keywords.css('background-color', COLORS.inactive);
       return;
     }
@@ -147,7 +157,7 @@ $(function() {
       });
 
       if (filter.shouldWhitelist(meta)) {
-        ascNode.css('display', 'block');
+        ascShow(ascNode);
 
         console.log("given meta");
         console.log(meta);
@@ -163,7 +173,7 @@ $(function() {
           });
         });
       } else {
-        ascNode.css('display', 'none');
+        ascHide(ascNode);
       }
     });
 
@@ -194,6 +204,25 @@ $(function() {
         if (totalMetaCategoryValues === undefined || !totalMetaCategoryValues.has(value)) {
           keyword.css('background-color', 'gray');
         }
+      }
+    });
+
+    sections.each(function(i, _section) {
+      var section = $(_section);
+
+      var ascNodes = $(section).find('.asc-node');
+
+      // This section does not have any ASC nodes, skipping.
+      if (ascNodes.length == 0) {
+        return;
+      }
+
+      var activeAscNodes = $(section).find('.asc-active');
+
+      if (activeAscNodes.length > 0) {
+        ascShow(section);
+      } else {
+        ascHide(section);
       }
     });
   }
